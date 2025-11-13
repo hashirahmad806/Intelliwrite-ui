@@ -1,9 +1,8 @@
-  // import  FeatureSection  from "../components/FeatureSection";
-  // import   PricingSection  from "../components/FeatureSection";
 
 
 import {FeaturesSection} from "../components/FeatureSection";
 import {PricingSection} from "../components/FeatureSection";
+import UserTestimonials from "../components/UserTestimonials"
 
 import { Skeleton } from "@/components/ui/skeleton"
 
@@ -118,10 +117,6 @@ function Hero() {
     </section>
   )
 }
-
-
-
-
 
 
 function Part1() {
@@ -323,19 +318,11 @@ flex flex-col items-center justify-center text-center border border-white/10 bg-
       <FeaturesSection />
                   <PricingSection />
 
-
+           <UserTestimonials/>
     </section>
   )
+
 }
-
-
-
-
-
-
-
-
-
 
 
 function Home() {
