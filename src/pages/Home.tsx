@@ -3,9 +3,10 @@
 import {FeaturesSection} from "../components/FeatureSection";
 import {PricingSection} from "../components/FeatureSection";
 import UserTestimonials from "../components/UserTestimonials"
-
+import BrandSlider  from "../components/BrandSlider"
 import { Skeleton } from "@/components/ui/skeleton"
-
+import ContactSection from "../components/ContactSection"
+  import Blog from  "../components/Blog"
 function Hero() {
   return (
     <section
@@ -43,8 +44,8 @@ function Hero() {
           bg-gradient-to-r from-[#b972ff] to-[#6ecbff]
           bg-clip-text text-transparent
           drop-shadow-[0_0_20px_rgba(130,80,255,0.4)]
-          max-w-3xl
-          text-[Plus-Jakarta-sans]
+          
+          text-[Plus-Jakarta-sans] max-w-4xl leading-relaxed
           
         "
       >
@@ -54,12 +55,12 @@ function Hero() {
       <p
         className="
           mt-6 text-base sm:text-lg text-gray-300 
-          max-w-2xl leading-relaxed
+          max-w-2xl leading-relaxed 
         "
       >
         Highly customizable Tailwind CSS template for AI tools, startups,
         software, and product sites. Comes with everything you need — pages,
-        features, sections, and more that you can easily customize.
+        features, sections, and more that you can easily customize. 
       </p>
 
       <button
@@ -315,10 +316,11 @@ flex flex-col items-center justify-center text-center border border-white/10 bg-
     </section>
 
       
-      <FeaturesSection />
-                  <PricingSection />
+        <FeaturesSection />
+        <PricingSection />
 
-           <UserTestimonials/>
+        <UserTestimonials />
+        <BrandSlider />
     </section>
   )
 
@@ -329,8 +331,11 @@ function Home() {
   return (
     <div><Hero />
       <Part1 />
+      <ContactSection />
+      <Blog />
 
     </div>
+
   )
 }
 
