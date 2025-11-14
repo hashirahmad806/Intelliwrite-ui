@@ -320,7 +320,8 @@ flex flex-col items-center justify-center text-center border border-white/10 bg-
         <PricingSection />
 
         <UserTestimonials />
-        <BrandSlider />
+      <BrandSlider />
+       
     </section>
   )
 
