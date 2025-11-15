@@ -330,7 +330,8 @@ function Blog() {
             <div className="absolute inset-0 bg-gradient-to-br from-white/5 to-transparent opacity-10 pointer-events-none"></div>
 
             <button className="relative mb-6 text-sm inline-flex items-center gap-2 py-2 px-6 rounded-full bg-white/10 text-white backdrop-blur-xl border border-white/20 hover:bg-white/20 transition-all duration-300">
-              hashir ahmad
+              
+Try our tool for Free
             </button>
 
             <h2 className="text-white mb-4 text-3xl sm:text-4xl xl:text-5xl font-extrabold">
@@ -350,6 +351,38 @@ function Blog() {
         </div>
       </div>
 
+       <section className="flex flex-row pt-16 sm:pt-20 xl:pt-28 pb-11">
+  <div className="flex flex-wrap items-center justify-between gap-25 w-full">
+
+    {/* Text Section */}
+    <div className="flex flex-col text-white ">
+      <h1 className="font-semibold text-3xl mb-2">News & Update</h1>
+      <p className="text-gray-400 text-[18px]">
+        Keep up to date with everything about our tool
+      </p>
+    </div>
+
+    {/* Subscription Section */}
+    <div className="flex flex-row gap-3 w-full sm:w-auto">
+      <input
+        type="email"
+        placeholder=" Enter Your  Email"
+              className="w-full sm:w-[300px] py-3 px-6 rounded-lg bg-white/5 border border-white/10"
+               required
+      />
+
+      <button
+        className="rounded-lg bg-gradient-to-r from-purple-500 to-indigo-500
+        text-white text-sm py-3.5 px-7 shadow-lg hover:opacity-90 transition"
+      >
+        Subscribe
+      </button>
+    </div>
+
+  </div>
+</section>
+
+     
     </section>
   );
 }

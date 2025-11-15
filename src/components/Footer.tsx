@@ -118,9 +118,6 @@
 
 
 
-
-
-
 import { Facebook, Instagram, Twitter, Github } from "lucide-react";
 
 export default function Footer() {
