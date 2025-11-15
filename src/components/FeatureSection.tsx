@@ -1,10 +1,6 @@
 
 
 
-
-
-
-
 import React from "react";
 import { MessageSquare, CheckCircle } from "lucide-react"; // for icons
 
@@ -25,7 +21,7 @@ const FeaturesSection = () => {
   ];
 
   return (
-    <section className="w-full bg-[#030014] text-white py-16 px-6 flex flex-col items-center justify-center">
+    <section className="w-full bg-[#030014] text-white py-16 px-6 flex flex-col items-center justify-center" id="features">
       <div className="max-w-6xl w-full grid grid-cols-1 md:grid-cols-2 gap-8">
         {features.map((feature, index) => (
           <div
@@ -98,7 +94,7 @@ const PricingSection = () => {
   ];
 
   return (
-    <section className="relative w-full bg-[#080710] text-white py-24 flex flex-col items-center justify-center overflow-hidden">
+    <section className="relative w-full bg-[#080710] text-white py-24 flex flex-col items-center justify-center overflow-hidden"  id="pricing">
       {/* Glow Background */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[500px] h-[250px] bg-purple-700/40 rounded-full blur-[140px]" />
 

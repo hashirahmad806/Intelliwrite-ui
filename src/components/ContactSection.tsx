@@ -1,7 +1,7 @@
 
 export default function ContactSection() {
   return (
-    <section className="w-full py-24 bg-[#060014] flex justify-center px-4">
+    <section className="w-full py-24 bg-[#060014] flex justify-center px-4"    id="support">
       <div className="w-full max-w-4xl text-center relative">
 
         {/* Top Glow Background */}
