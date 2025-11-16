@@ -1,5 +1,4 @@
 
-
 import {FeaturesSection} from "../components/FeatureSection";
 import {PricingSection} from "../components/FeatureSection";
 import UserTestimonials from "../components/UserTestimonials"
@@ -7,6 +6,9 @@ import BrandSlider  from "../components/BrandSlider"
 import { Skeleton } from "@/components/ui/skeleton"
 import ContactSection from "../components/ContactSection"
   import Blog from  "../components/Blog"
+
+
+
 function Hero() {
   return (
     <section
@@ -15,13 +17,33 @@ function Hero() {
         flex flex-col items-center justify-center 
         text-center px-6 sm:px-10 lg:px-20 
         py-16 sm:py-24 lg:py-32 
-        bg-gradient-to-b from-[#0A0118] via-[#150028] to-[#1a0038]
-        text-white
-        relative overflow-hidden
-        text-[plus-jakarta-sans]
+        bg-[#060014] text-white relative overflow-hidden
+        font-[Plus Jakarta Sans]
       "
-    >   
-      {/* Hero Text Section */}
+    >
+      {/* 🔥 Top Glow Light Effect */}
+      <div
+        className="
+          absolute top-[-260px] sm:top-[-320px] left-1/2 -translate-x-1/2
+          w-[1200px] h-[800px]
+          bg-[radial-gradient(circle,_rgba(140,70,255,0.55)_0%,_rgba(3,0,20,0)_70%)]
+          blur-[180px]
+          pointer-events-none
+        "
+      />
+
+      {/* 🔥 Optional second glow for depth */}
+      <div
+        className="
+          absolute top-[-100px] left-1/2 -translate-x-1/2
+          w-[1000px] h-[600px]
+          bg-[radial-gradient(circle,_rgba(85,0,255,0.3)_0%,_rgba(3,0,20,0)_70%)]
+          blur-[200px]
+          pointer-events-none
+        "
+      />
+
+      {/* Hero Tag */}
       <button
         className="
           px-5 sm:px-6 py-2.5 sm:py-3 
@@ -36,22 +58,22 @@ function Hero() {
         🎨 Your Ultimate Creative Companion!
       </button>
 
+      {/* Main Heading */}
       <h1
         className="
-          mt-6   flex
+          mt-6 
           text-3xl sm:text-5xl lg:text-6xl 
           font-extrabold leading-tight 
           bg-gradient-to-r from-[#b972ff] to-[#6ecbff]
           bg-clip-text text-transparent
           drop-shadow-[0_0_20px_rgba(130,80,255,0.4)]
-          
-          text-[Plus-Jakarta-sans] max-w-4xl leading-relaxed
-          
+          max-w-4xl leading-relaxed
         "
       >
-        Elevate Your Content with Our  AI-Powered Writing Tool
+        Elevate Your Content with Our AI-Powered Writing Tool
       </h1>
 
+      {/* Description */}
       <p
         className="
           mt-6 text-base sm:text-lg text-gray-300 
@@ -60,9 +82,10 @@ function Hero() {
       >
         Highly customizable Tailwind CSS template for AI tools, startups,
         software, and product sites. Comes with everything you need — pages,
-        features, sections, and more that you can easily customize. 
+        features, sections, and more that you can easily customize.
       </p>
 
+      {/* CTA Button */}
       <button
         className="
           mt-8 px-8 py-3 rounded-full text-base font-semibold
@@ -75,7 +98,7 @@ function Hero() {
         Start Your Free Trial
       </button>
 
-      {/* Skeleton Loading Illustration */}
+      {/* Skeleton UI Preview */}
       <div className="mt-16 flex justify-center w-full">
         <div
           className="
@@ -92,7 +115,7 @@ function Hero() {
             <div className="h-3 w-3 rounded-full bg-green-500/50"></div>
           </div>
 
-          {/* Skeleton Layout (like AI code editor) */}
+          {/* Skeleton Layout */}
           <div className="flex flex-col sm:flex-row gap-6 w-full">
             {/* Left Sidebar */}
             <div className="flex flex-col space-y-3 w-full sm:w-1/3">
@@ -116,13 +139,13 @@ function Hero() {
         </div>
       </div>
     </section>
-  )
+  );
 }
 
 
-function Part1() {
+ export function Features() {
   return (
-    <section className="flex flex-col w-full bg-[#030014] justify-center items-center py-10">
+    <section className="flex flex-col w-full bg-[#060014] justify-center items-center py-10  " id="feature">
       <div className="px-1.5 flex flex-col items-center justify-center text-center">
         <button
           className="
@@ -315,12 +338,7 @@ flex flex-col items-center justify-center text-center border border-white/10 bg-
       </div>
     </section>
 
-      
-        <FeaturesSection />
-        <PricingSection />
 
-        <UserTestimonials />
-      <BrandSlider />
        
     </section>
   )
@@ -331,7 +349,12 @@ flex flex-col items-center justify-center text-center border border-white/10 bg-
 function Home() {
   return (
     <div><Hero />
-      <Part1 />
+      <Features />
+       <FeaturesSection />
+        <PricingSection />
+
+        <UserTestimonials />
+      <BrandSlider />
       <ContactSection />
       <Blog />
 

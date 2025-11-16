@@ -94,7 +94,7 @@ const PricingSection = () => {
   ];
 
   return (
-    <section className="relative w-full bg-[#080710] text-white py-24 flex flex-col items-center justify-center overflow-hidden"  id="pricing">
+    <section className="relative w-full bg-[#060014] text-white py-24 flex flex-col items-center justify-center overflow-hidden"  id="pricing">
       {/* Glow Background */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[500px] h-[250px] bg-purple-700/40 rounded-full blur-[140px]" />
 

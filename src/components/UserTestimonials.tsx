@@ -195,7 +195,7 @@ export default function UserTestimonials() {
     setVisibleCount(6); // Reset back to default
   };
   return (
-    <section className="text-white py-20 px-6 min-h-screen flex flex-col items-center">
+    <section className="text-white py-20 px-6 min-h-screen flex flex-col items-center  bg-[#060014]">
       <div className="text-center mb-10">
         <h3 className="text-purple-400 uppercase text-sm tracking-widest mb-2">
           Wall of love

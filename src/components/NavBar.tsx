@@ -107,13 +107,6 @@
 
 
 
-
-
-
-
-
-
-
 import React, { useState, useEffect } from "react";
 import { NavLink, useLocation } from "react-router-dom";
 import { Menu, X, ChevronDown } from "lucide-react";
@@ -124,7 +117,7 @@ export default function Navbar() {
   const [pagesOpen, setPagesOpen] = useState(false);
   const location = useLocation();
 
-  const pagesRoutes = ["/blog", "/about", "/team", "/contact"];
+  const pagesRoutes = [ "/about","/price",  "/blog-grid", "/blog-single","/signin","/signup" ,"/error-page" ,];
 
   const navLinkStyle =
     "px-4 py-2 text-white/70 hover:text-white transition-all duration-200";
@@ -148,7 +141,7 @@ export default function Navbar() {
   }, []);
 
   return (
-    <header className="fixed top-0 left-0 w-full z-50 bg-[#0A0117]/80 backdrop-blur-xl border-b border-white/10  sm:mb-3">
+    <header className="fixed top-0 left-0 w-full z-50 bg-[#0A0117]/80 backdrop-blur-xl border-b border-white/10  ">
       <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
 
         {/* Logo */}
