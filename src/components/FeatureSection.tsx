@@ -50,7 +50,7 @@ const FeaturesSection = () => {
 
 import { Sun, Circle, X } from "lucide-react";
 
-const PricingSection = () => {
+  const PricingSection = () => {
   const plans = [
     {
       name: "Starter",

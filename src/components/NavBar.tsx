@@ -117,7 +117,7 @@ export default function Navbar() {
   const [pagesOpen, setPagesOpen] = useState(false);
   const location = useLocation();
 
-  const pagesRoutes = [ "/about","/price",  "/blog-grid", "/blog-single","/signin","/signup" ,"/error-page" ,];
+  const pagesRoutes = [ "/about-us","/price",  "/blog-grid", "/blog-single","/signin","/signup" ,"/about-me",];
 
   const navLinkStyle =
     "px-4 py-2 text-white/70 hover:text-white transition-all duration-200";

@@ -1,12 +1,25 @@
 import { FeaturesSection } from "../components/FeatureSection"
  import  {Features}  from "./Home"
  import UserTestimonials  from "../components/UserTestimonials"
-import  BrandSlider  from "../components/BrandSlider"
+import BrandSlider from "../components/BrandSlider"
+import { Github, Twitter, Instagram, Linkedin } from "lucide-react";
+
 import { useState } from "react";
  
 import  {Tool}  from "../components/Blog"
 export default function AboutUS() {
-   const [soundEnabled, setSoundEnabled] = useState(false);
+  const [soundEnabled, setSoundEnabled] = useState(false);
+  
+  
+const teamMembers = [
+  { name: "Hashir Ahmad", role: "Web Developer", img: "/Hashir.jpg" },
+  { name: "Davis Curtis", role: "UI/Ux Designer", img: "/t4.jpg" },
+  { name: "James Donin", role: "Finance Manager", img: "/mb14.jpg" },
+  { name: "Erin Bergson", role: "Ai Master", img: "/t1.jpg" },
+  { name: "Hassan Salman", role: "Graphic Designer", img: "/hassanbds1.jpg" },
+  { name: "Corey Korsgaard", role: "Data Engineer ", img: "/t2.jpg" },
+  { name: "Martin Geidt", role: "Project Manager", img: "/t3.jpg" },
+];
   
   const videoURL = soundEnabled
     ? "https://www.youtube.com/embed/hmtuvNfytjM?autoplay=1&mute=0&loop=1&controls=0&showinfo=0&modestbranding=1&rel=0&playlist=hmtuvNfytjM"
@@ -96,8 +109,66 @@ export default function AboutUS() {
       </button>
     </section>
 
-
       
+
+<section className="py-16 text-center ">
+  <h2 className="text-4xl font-semibold mb-3">Our Dynamic Team</h2>
+
+  <p className="max-w-2xl mx-auto text-gray-400 text-sm mb-14">
+    Our AI writing tool is designed to empower you with exceptional writing capabilities,
+    making the writing process more efficient, accurate, and enjoyable.
+  </p>
+
+  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-14 px-6 max-w-6xl mx-auto">
+    {teamMembers.map((member, index) => (
+      <div key={index} className="flex flex-col items-center group relative">
+
+        {/* IMAGE WRAPPER WITH ANIMATED HOVER RING */}
+        <div className="relative w-32 h-32 mb-4">
+          {/* Gradient Glow On Hover */}
+          <div className="absolute inset-0 rounded-full bg-gradient-to-r 
+            from-purple-600 via-purple-400 to-purple-600 
+            blur-[4px] opacity-0 group-hover:opacity-100 transition duration-500">
+          </div>
+
+          {/* Main image */}
+          <img
+            src={member.img}
+            alt={member.name}
+            className="
+              w-32 h-32 rounded-full object-cover border-2 border-transparent 
+              group-hover:scale-105 transition duration-500 relative z-10"
+          />
+        </div>
+       
+
+        <h3 className="text-lg font-lg  font-bold">{member.name}</h3>
+        <p className="text-gray-400 text-sm mb-3">{member.role}</p>
+
+        {/* Social Icons */}
+        
+
+          {/* Social Links */}
+          <div className="flex gap-3 mt-1">
+            <a href="https://github.com/hashirahmad806" target="_blank" className="text-white hover:text-purple-400 transition">
+              <Github size={20} />
+            </a>
+            <a href="https://twitter.com/" target="_blank" className="text-white hover:text-blue-400 transition">
+              <Twitter size={20} />
+            </a>
+            <a href="https://instagram.com/" target="_blank" className="text-white hover:text-pink-400 transition">
+              <Instagram size={20} />
+            </a>
+            <a href="https://linkedin.com/" target="_blank" className="text-white hover:text-blue-500 transition">
+              <Linkedin size={20} />
+            </a>
+          </div>
+      </div>
+    ))}
+  </div>
+</section>
+
+
 
 
       <UserTestimonials />
