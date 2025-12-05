@@ -2,26 +2,47 @@
 
 
 import React from "react";
-import { MessageSquare, CheckCircle } from "lucide-react"; // for icons
+import {
+  
+   Sparkles,
+  SpellCheck,
+  Rocket,
+  ShieldCheck
+ } from "lucide-react"; // for icons
 
 const FeaturesSection = () => {
-  const features = [
-    {
-      icon: <MessageSquare size={24} />,
-      title: "Empowering Writing Excellence",
-      description:
-        "Our AI writing tool is designed to empower you with exceptional writing capabilities, making the writing process...",
-    },
-    {
-      icon: <CheckCircle size={24} />,
-      title: "Grammar and Spell Check",
-      description:
-        "Our AI writing tool is designed to empower you with exceptional writing capabilities.",
-    },
-  ];
+ 
+
+const features = [
+  {
+    icon: <Sparkles size={26} />,
+    title: "AI-Powered Content Creation",
+    description:
+      "Generate high-quality blogs, ads, and long-form content with advanced AI-crafted sentences.",
+  },
+  {
+    icon: <SpellCheck size={26} />,
+    title: "Smart Grammar & Style Fixing",
+    description:
+      "Instantly improve tone, grammar, structure, and clarity with intelligent rewriting tools.",
+  },
+  {
+    icon: <Rocket size={26} />,
+    title: "Boost Writing Productivity",
+    description:
+      "Speed up your workflow with automated suggestions, templates, and real-time insights.",
+  },
+  {
+    icon: <ShieldCheck size={26} />,
+    title: "Secure & Reliable Platform",
+    description:
+      "Your data stays encrypted, private, and protected with enterprise-grade security.",
+  },
+];
+
 
   return (
-    <section className="w-full bg-[#030014] text-white py-16 px-6 flex flex-col items-center justify-center" id="features">
+    <section className="w-full bg-[#030014] text-white py-16 px-6 flex flex-col items-center justify-center" >
       <div className="max-w-6xl w-full grid grid-cols-1 md:grid-cols-2 gap-8">
         {features.map((feature, index) => (
           <div

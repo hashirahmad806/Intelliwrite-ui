@@ -146,7 +146,9 @@ export default function Navbar() {
 
         {/* Logo */}
         <div className="flex items-center gap-3">
-          <ArcadeLogo />
+        <div className="w-9 h-9 bg-purple-600 rounded-xl flex items-center justify-center text-xl shadow-lg shadow-purple-500/40">
+              ⚡
+            </div>
           <h1 className="text-white text-xl font-semibold">AI Arcade</h1>
         </div>
 

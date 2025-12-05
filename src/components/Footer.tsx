@@ -135,7 +135,7 @@ export default function Footer() {
             <div className="w-9 h-9 bg-purple-600 rounded-xl flex items-center justify-center text-xl shadow-lg shadow-purple-500/40">
               ⚡
             </div>
-            <h2 className="text-xl font-semibold tracking-wide">AI Tool</h2>
+            <h2 className="text-xl font-semibold tracking-wide">AI Arcade</h2>
           </div>
 
           <p className="text-sm text-gray-400 leading-relaxed">

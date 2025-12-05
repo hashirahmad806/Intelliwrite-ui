@@ -20,6 +20,7 @@ function App() {
         <Route path="blog-grid" element={<Blogpage />} />
         <Route path="blog-single" element={<BLogsingle />} />
         <Route path="signup" element={<Signup />} />
+        <Route path="signin" element={<Signup />} />
       </Route>
     </Routes>
   );
